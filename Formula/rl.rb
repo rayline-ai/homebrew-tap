@@ -6,25 +6,25 @@ class Rl < Formula
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.1.0+8a01db8a0cb1/homebrew/rl-0.1.0-macosx_11_0_arm64.tar.gz"
-      sha256 "dd9939b4919cba84aa26e34e9ca191ae0bb92ca7814b0f809bea7ffbb13941c6"
+      url "https://get.rayline.ai/cli/v0.1.0+97c558837fda/homebrew/rl-0.1.0-macosx_11_0_arm64.tar.gz"
+      sha256 "0fd770739eb04522c9df141d931d90e0ebae0ab0fc976fa95afb311a67e431bb"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.1.0+8a01db8a0cb1/homebrew/rl-0.1.0-macosx_10_12_x86_64.tar.gz"
-      sha256 "c6f4cef89cd22ad1cf1f9b92aef06b7ec9ace7a01d1d8c5185c67d3305589642"
+      url "https://get.rayline.ai/cli/v0.1.0+97c558837fda/homebrew/rl-0.1.0-macosx_10_12_x86_64.tar.gz"
+      sha256 "e6802e4e5b090a2dd8f98496679495bda04760533bd62e9aca5ddec926f5940f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.1.0+8a01db8a0cb1/homebrew/rl-0.1.0-linux_aarch64.tar.gz"
-      sha256 "4fb53262948b5a4edbdf960083c7d2aaeddc43f8f29f9517f9ff3938347befc1"
+      url "https://get.rayline.ai/cli/v0.1.0+97c558837fda/homebrew/rl-0.1.0-linux_aarch64.tar.gz"
+      sha256 "3aefb7265e0970ed40d4ef1eba5846837f8fc82b0d93a0332aab0583113f5f9c"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.1.0+8a01db8a0cb1/homebrew/rl-0.1.0-linux_x86_64.tar.gz"
-      sha256 "401f92f208824a2191c58c8fd2a5c96d45aa171bb48e41798540c12c35c3f304"
+      url "https://get.rayline.ai/cli/v0.1.0+97c558837fda/homebrew/rl-0.1.0-linux_x86_64.tar.gz"
+      sha256 "2c7a168c70bbed8755710be9a639e5ed14e7fba87808e28ff5a79d2afdfb0e36"
     end
   end
 

@@ -1,4 +1,4 @@
-class Rl < Formula
+class Rayline < Formula
   desc "Rayline native router launcher"
   homepage "https://rayline.ai"
   version "0.1.0"

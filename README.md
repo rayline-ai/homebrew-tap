@@ -6,5 +6,5 @@ This tap is updated by the Rayline CLI release workflow in
 Install command after the first promoted release:
 
 ```sh
-brew install rayline-ai/tap/rl
+brew install rayline-ai/tap/rayline
 ```

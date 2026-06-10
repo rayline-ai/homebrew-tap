@@ -1,10 +1,10 @@
 cask "rayline-app" do
-  version "0.1.0"
-  sha256 "5dce30cd132399562fda52c3e906c53b887bc4dd293a1401e8bd2a34998aceed"
+  version "0.1.1"
+  sha256 "51d02b10522fd70c845b3f6d35ce577ff50c7980438759fab42277604c6a190c"
 
-  url "https://get.rayline.ai/cli/v0.1.0+3904e18985e4/Rayline.dmg"
+  url "https://get.rayline.ai/cli/v0.1.1+ecdd9d418171/Rayline.dmg"
   name "Rayline"
-  desc "Rayline menu bar app with bundled rl CLI and rld router daemon"
+  desc "Rayline menu bar app with bundled rayline CLI and rld router daemon"
   homepage "https://rayline.ai/"
 
   livecheck do
@@ -19,7 +19,7 @@ cask "rayline-app" do
   depends_on arch: :arm64
 
   app "Rayline.app"
-  binary "#{appdir}/Rayline.app/Contents/Resources/bin/rl"
+  binary "#{appdir}/Rayline.app/Contents/Resources/bin/rayline"
   binary "#{appdir}/Rayline.app/Contents/Resources/bin/rld"
 
   zap trash: [

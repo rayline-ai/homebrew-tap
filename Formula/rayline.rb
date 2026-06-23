@@ -1,30 +1,30 @@
 class Rayline < Formula
   desc "Rayline native router launcher"
   homepage "https://rayline.ai"
-  version "0.1.1"
+  version "0.2.0"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.1.1+3a9f2c4511fb/homebrew/rayline-0.1.1-macosx_11_0_arm64.tar.gz"
-      sha256 "4c50952542fe060a24d0fc1087cfa8c4baf8e1fdb9ef2043769e82cd45ed6fd5"
+      url "https://get.rayline.ai/cli/v0.2.0/homebrew/rayline-0.2.0-macosx_11_0_arm64.tar.gz"
+      sha256 "0be7112b0a9fd33557f927b6074e82ca66f75743b5a709354eb9d390c184ef1d"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.1.1+3a9f2c4511fb/homebrew/rayline-0.1.1-macosx_10_12_x86_64.tar.gz"
-      sha256 "8056875a4d520c7e7e4f8e4efe048f81d65b5fdba1d87c8ce275d76c77c51ac3"
+      url "https://get.rayline.ai/cli/v0.2.0/homebrew/rayline-0.2.0-macosx_10_12_x86_64.tar.gz"
+      sha256 "05544df7a3399b652d45cf2b0f20f4884c4f5a260d937d412a056a42601de33f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.1.1+3a9f2c4511fb/homebrew/rayline-0.1.1-linux_aarch64.tar.gz"
-      sha256 "1c8206a61af3003ab231dacac3f1057b5d87139202b4beb7a7bf263ac25e87f4"
+      url "https://get.rayline.ai/cli/v0.2.0/homebrew/rayline-0.2.0-linux_aarch64.tar.gz"
+      sha256 "07bc98315ebb6c14cfb4687c7d99db95973674d3e4dcb0cfe5859f7ecece25cf"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.1.1+3a9f2c4511fb/homebrew/rayline-0.1.1-linux_x86_64.tar.gz"
-      sha256 "a4874a776dd5f136c5703079b3b10261b7b62ecb7e2278cbcbc14bb7bc006a50"
+      url "https://get.rayline.ai/cli/v0.2.0/homebrew/rayline-0.2.0-linux_x86_64.tar.gz"
+      sha256 "bd2f9a6a0e3b40711587c18881a0cf665ac0ad6f4d0f0731ecb18d4f155514c4"
     end
   end
 
@@ -40,7 +40,7 @@ class Rayline < Formula
 
   def caveats
     <<~EOS
-      Run `rayline claude` to launch Claude Code through Rayline.
+      Run `rayline claude --local-router` to launch Claude Code through Rayline.
     EOS
   end
 

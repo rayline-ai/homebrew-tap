@@ -1,30 +1,30 @@
 class Rayline < Formula
   desc "Rayline native router launcher"
   homepage "https://rayline.ai"
-  version "0.2.6"
+  version "0.2.7"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.2.6+7bd2849c99d2/homebrew/rayline-0.2.6-macosx_11_0_arm64.tar.gz"
-      sha256 "6a8bbf455a8214ae607c6d5580ba0cc22b7a3fabaafe7b5e7ab324b0b1635384"
+      url "https://get.rayline.ai/cli/v0.2.7+3bc45a8238ad/homebrew/rayline-0.2.7-macosx_11_0_arm64.tar.gz"
+      sha256 "1ec04d412960247312e86bd11debada33cb2a372383d0ace45eb248fa738c973"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.2.6+7bd2849c99d2/homebrew/rayline-0.2.6-macosx_10_12_x86_64.tar.gz"
-      sha256 "6b41790776b5caa560a90c9bf8e82c2a4ae4691bcef3e428fd274e947901c91a"
+      url "https://get.rayline.ai/cli/v0.2.7+3bc45a8238ad/homebrew/rayline-0.2.7-macosx_10_12_x86_64.tar.gz"
+      sha256 "1e3b781300704130ae3f42bc51cb6393111001493de41b112351c965f2220816"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.2.6+7bd2849c99d2/homebrew/rayline-0.2.6-linux_aarch64.tar.gz"
-      sha256 "c10228ccad8ff6b365db10c54891a6711ed5e4488acbbad52430ca749c51709b"
+      url "https://get.rayline.ai/cli/v0.2.7+3bc45a8238ad/homebrew/rayline-0.2.7-linux_aarch64.tar.gz"
+      sha256 "0f86ff69d5f1c744bdb3ce01fec3da748bb09619683f7fe688f1aff8a7ce72ad"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.2.6+7bd2849c99d2/homebrew/rayline-0.2.6-linux_x86_64.tar.gz"
-      sha256 "6a9c7ef566166a1abcfa379c8595e08c9154725eab0f5247addd653f760c65b6"
+      url "https://get.rayline.ai/cli/v0.2.7+3bc45a8238ad/homebrew/rayline-0.2.7-linux_x86_64.tar.gz"
+      sha256 "63765b4b3178449224a555b5a96bf11235b98bdd1eef4ba433538579d66f2db8"
     end
   end
 

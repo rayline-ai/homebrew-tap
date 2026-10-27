@@ -3,8 +3,8 @@ cask "rayline-app" do
   sha256 "f09480930585b041a1f686a07839fb6c0bcd3f60f7087b1b1ed6a20eff9feece"
 
   url "https://get.rayline.ai/cli/v0.2.14+0a478d340f13/Rayline.dmg"
-  name "Rayline"
-  desc "Rayline menu bar app with bundled rayline CLI and rld router daemon"
+  name "Raydock"
+  desc "Raydock menu bar app with bundled rayline CLI and rld router daemon"
   homepage "https://rayline.ai/"
 
   livecheck do

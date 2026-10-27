@@ -4,7 +4,7 @@ cask "rayline-app" do
 
   url "https://get.rayline.ai/cli/v0.2.14+0a478d340f13/Rayline.dmg"
   name "Raydock"
-  desc "Raydock menu bar app with bundled rayline CLI and rld router daemon"
+  desc "Raydock menu bar app with bundled Raydock CLI and rld router daemon"
   homepage "https://rayline.ai/"
 
   livecheck do
@@ -19,10 +19,10 @@ cask "rayline-app" do
   depends_on arch: :arm64
 
   app "Rayline.app"
-  # No `binary` stanzas: the app uses its embedded rayline/rld internally, and
-  # symlinking them into Homebrew's bin would collide with the `rayline` formula
+  # No `binary` stanzas: the app uses its embedded raydock/rld internally, and
+  # symlinking them into Homebrew's bin would collide with the `raydock` formula
   # (which installs the same names). Users who want the CLI on PATH install the
-  # formula: `brew install rayline-ai/tap/rayline`.
+  # formula: `brew install rayline-ai/tap/raydock`.
 
   zap trash: [
     "~/.config/rayline",

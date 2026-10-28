@@ -1,8 +1,8 @@
 cask "rayline-app" do
-  version "0.2.14"
-  sha256 "f09480930585b041a1f686a07839fb6c0bcd3f60f7087b1b1ed6a20eff9feece"
+  version "0.3.0"
+  sha256 "0864f098d5c8788be36a54f65f55a4ed8ba4b86804a260195a263b7220503a52"
 
-  url "https://get.rayline.ai/cli/v0.2.14+0a478d340f13/Rayline.dmg"
+  url "https://get.rayline.ai/cli/v0.3.0+050ddf4377f4/Rayline.dmg"
   name "Raydock"
   desc "Raydock menu bar app with bundled Raydock CLI and rld router daemon"
   homepage "https://rayline.ai/"

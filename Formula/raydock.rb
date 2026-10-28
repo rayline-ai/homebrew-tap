@@ -46,7 +46,9 @@ class Raydock < Formula
 
   def caveats
     <<~EOS
-      Run `raydock claude --local` to launch Claude Code through Raydock.
+      Run `raydock auth login`, then `raydock claude` to launch Claude Code on ARC
+      (Sage for the main agent, Swift for subagents). `raydock claude --local`
+      uses on-device routing instead.
     EOS
   end
 

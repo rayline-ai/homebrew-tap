@@ -1,5 +1,6 @@
-class Rayline < Formula
-  desc "Rayline native router launcher"
+# Staged migration: refresh version, URLs and checksums from the first Raydock release before publishing this tap.
+class Raydock < Formula
+  desc "Raydock on-device CLI for local models and cloud services"
   homepage "https://rayline.ai"
   version "0.2.14"
   license :cannot_represent
@@ -34,7 +35,8 @@ class Rayline < Formula
   end
 
   def install
-    bin.install "rayline"
+    bin.install "rayline" => "raydock"
+    bin.install_symlink "raydock" => "rayline"
     bin.install "rld"
     # Hybrid execution core: rayline resolves it next to its own executable.
     bin.install "rayline-core"
@@ -44,12 +46,15 @@ class Rayline < Formula
 
   def caveats
     <<~EOS
-      Run `rayline claude --local-router` to launch Claude Code through Rayline.
+      Run `raydock auth login`, then `raydock claude` to launch Claude Code on ARC
+      (Sage for the main agent, Swift for subagents). `raydock claude --local`
+      uses on-device routing instead.
     EOS
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/rayline --version")
+    assert_match "raydock #{version}", shell_output("#{bin}/raydock --version")
+    assert_equal shell_output("#{bin}/raydock --version"), shell_output("#{bin}/rayline --version")
     assert_match "rld", shell_output("#{bin}/rld --version")
     assert_path_exists bin/"rayline-core"
     assert_path_exists pkgshare/"rayline-core-LICENSE"

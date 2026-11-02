@@ -1,30 +1,30 @@
 class Raydock < Formula
   desc "Raydock on-device CLI for local models and cloud services"
   homepage "https://rayline.ai"
-  version "0.3.0"
+  version "0.3.1"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.3.0+050ddf4377f4/homebrew/rayline-0.3.0-macosx_11_0_arm64.tar.gz"
-      sha256 "1ea9ab69a85d806d72034f225dc42a302ea620083a7be756a22b330d3ab2f97a"
+      url "https://get.rayline.ai/cli/v0.3.1+f3f89d9383f9/homebrew/rayline-0.3.1-macosx_11_0_arm64.tar.gz"
+      sha256 "1d398223ee8760cb8cf91dc208d87f38bcd604d995d47788b51eaaa58d4361e2"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.3.0+050ddf4377f4/homebrew/rayline-0.3.0-macosx_10_12_x86_64.tar.gz"
-      sha256 "7353bc4301aa696b15e12ec0ea7a2751ce3f3011c68514346ae927b3c681acbd"
+      url "https://get.rayline.ai/cli/v0.3.1+f3f89d9383f9/homebrew/rayline-0.3.1-macosx_10_12_x86_64.tar.gz"
+      sha256 "cad1ac649930285dcfecb5aa1c7027e194e90f2ad5a83859dd2feeb27c05806f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.3.0+050ddf4377f4/homebrew/rayline-0.3.0-linux_aarch64.tar.gz"
-      sha256 "ab88ceff86fa18ffaa5c1bc35a72181dda9cf05fd839f94f4ca0aac40a77a789"
+      url "https://get.rayline.ai/cli/v0.3.1+f3f89d9383f9/homebrew/rayline-0.3.1-linux_aarch64.tar.gz"
+      sha256 "b22c9813986368c037bbf4c431ef1ad3a1f5307b7882e1466d4f77f663bc2c9f"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.3.0+050ddf4377f4/homebrew/rayline-0.3.0-linux_x86_64.tar.gz"
-      sha256 "4fd4db932874eb8dfa9dd018880ad3189c1484fd129af7eae6483e07d3189c32"
+      url "https://get.rayline.ai/cli/v0.3.1+f3f89d9383f9/homebrew/rayline-0.3.1-linux_x86_64.tar.gz"
+      sha256 "6bfa2f1f0fac4fa1c3c9eaf3274b9e23a6a6bc3525d28964d1b5f3a17d7e9097"
     end
   end
 

@@ -1,7 +1,6 @@
 # Rayline Homebrew Tap
 
-This tap is updated by the Rayline CLI release workflow in
-`atlasfutures/memex-desktop`.
+This tap is updated by the Rayline CLI release workflow.
 
 Install command after the first promoted release:
 

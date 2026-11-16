@@ -1,30 +1,30 @@
 class Rayline < Formula
   desc "Rayline CLI that launches coding harnesses on ARC"
   homepage "https://rayline.ai"
-  version "0.5.1"
+  version "0.5.2"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.1+10f6a38b1389/homebrew/rayline-0.5.1-macosx_11_0_arm64.tar.gz"
-      sha256 "02bb896309244affb0021a9dda8d27ef88b8db2bce2b23a398fa233be1bf5e45"
+      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-macosx_11_0_arm64.tar.gz"
+      sha256 "a08c7456c55b25972e6f9b2a6117994748cc7daa91c4804d9914f01b2e336e0b"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.1+10f6a38b1389/homebrew/rayline-0.5.1-macosx_10_12_x86_64.tar.gz"
-      sha256 "6a622f6df1371b8136c4ea132eaf74f4d392369d150e3f315580f8638d437b86"
+      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-macosx_10_12_x86_64.tar.gz"
+      sha256 "da2ce423b36f8071da2094228ba2b068e4a3ca76dadbd12ae419b5aa4c667017"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.1+10f6a38b1389/homebrew/rayline-0.5.1-linux_aarch64.tar.gz"
-      sha256 "3c6a02aac58bc0a0323519d69111add23be0a3f8b569a1def1149040f13ed1c6"
+      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-linux_aarch64.tar.gz"
+      sha256 "c911f9c3e06acc9441fa9a99208be9546a4fb4c855c3ad9b98bae956a20477fc"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.1+10f6a38b1389/homebrew/rayline-0.5.1-linux_x86_64.tar.gz"
-      sha256 "ae2864e3011032055c315a4eabe208f906a8aad810c345b10cc74b041b1ad4bb"
+      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-linux_x86_64.tar.gz"
+      sha256 "535df9371bc50295ff57adacbb55817245ba5f9c9ee6f538385f3d1141c54398"
     end
   end
 
@@ -39,6 +39,11 @@ class Rayline < Formula
     bin.install "rayline-core"
     pkgshare.install "rayline-core-LICENSE"
     pkgshare.install "rayline-core-source.json"
+    # The local ARC encoder ships in the macOS arm64 archive only, beside rayline (which looks for it there).
+    if File.exist?("rayline-arc-encoder")
+      bin.install "rayline-arc-encoder"
+      pkgshare.install "rayline-arc-encoder-LICENSE"
+    end
   end
 
   def caveats
@@ -53,6 +58,7 @@ class Rayline < Formula
     assert_match "rayline #{version}", shell_output("#{bin}/rayline --version")
     assert_path_exists bin/"rayline-core"
     assert_path_exists pkgshare/"rayline-core-LICENSE"
+    assert_path_exists pkgshare/"rayline-arc-encoder-LICENSE" if (bin/"rayline-arc-encoder").exist?
     # The Go core needs macOS 13+; the Rust CLI still supports older macOS.
     if OS.linux? || MacOS.version >= :ventura
       assert_match "contract_version", shell_output("#{bin}/rayline-core --version")

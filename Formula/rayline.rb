@@ -1,30 +1,30 @@
 class Rayline < Formula
   desc "Rayline CLI that launches coding harnesses on ARC"
   homepage "https://rayline.ai"
-  version "0.5.2"
+  version "0.5.3"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-macosx_11_0_arm64.tar.gz"
-      sha256 "a08c7456c55b25972e6f9b2a6117994748cc7daa91c4804d9914f01b2e336e0b"
+      url "https://get.rayline.ai/cli/v0.5.3+3bc25bc98f31/homebrew/rayline-0.5.3-macosx_11_0_arm64.tar.gz"
+      sha256 "6acf62343563449f3be3c2ad99ed3f679ee11dcc6d363f373b7d56c98fb7a337"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-macosx_10_12_x86_64.tar.gz"
-      sha256 "da2ce423b36f8071da2094228ba2b068e4a3ca76dadbd12ae419b5aa4c667017"
+      url "https://get.rayline.ai/cli/v0.5.3+3bc25bc98f31/homebrew/rayline-0.5.3-macosx_10_12_x86_64.tar.gz"
+      sha256 "19ded322ba4f74fd64bb5670a4da89c2a0bf4b32dbcfc2172f0a4eae0bffd4d3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-linux_aarch64.tar.gz"
-      sha256 "c911f9c3e06acc9441fa9a99208be9546a4fb4c855c3ad9b98bae956a20477fc"
+      url "https://get.rayline.ai/cli/v0.5.3+3bc25bc98f31/homebrew/rayline-0.5.3-linux_aarch64.tar.gz"
+      sha256 "52b506b293556a3a3a2cb3be0aa3be1b3ec6aa0e3cab545adcdc35591f8e9a28"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.2+3e23c3e98424/homebrew/rayline-0.5.2-linux_x86_64.tar.gz"
-      sha256 "535df9371bc50295ff57adacbb55817245ba5f9c9ee6f538385f3d1141c54398"
+      url "https://get.rayline.ai/cli/v0.5.3+3bc25bc98f31/homebrew/rayline-0.5.3-linux_x86_64.tar.gz"
+      sha256 "80a4884b0cbf39c81fa203ec9da94ebe3ca8396101e05e72d188f7e09b228378"
     end
   end
 
@@ -39,7 +39,7 @@ class Rayline < Formula
     bin.install "rayline-core"
     pkgshare.install "rayline-core-LICENSE"
     pkgshare.install "rayline-core-source.json"
-    # The local ARC encoder ships in the macOS arm64 archive only, beside rayline (which looks for it there).
+    # The local ARC encoder ships in the macOS arm64 and Linux archives, beside rayline (which looks for it there).
     if File.exist?("rayline-arc-encoder")
       bin.install "rayline-arc-encoder"
       pkgshare.install "rayline-arc-encoder-LICENSE"

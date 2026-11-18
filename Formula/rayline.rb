@@ -1,30 +1,30 @@
 class Rayline < Formula
   desc "Rayline CLI that launches coding harnesses on ARC"
   homepage "https://rayline.ai"
-  version "0.5.5"
+  version "0.5.6"
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.5+871502f5a39b/homebrew/rayline-0.5.5-macosx_11_0_arm64.tar.gz"
-      sha256 "26b0a04a3e3280611bec8e168100f6f252e6922744d41df82909f68e0baf3125"
+      url "https://get.rayline.ai/cli/v0.5.6+4bfa7c362b68/homebrew/rayline-0.5.6-macosx_11_0_arm64.tar.gz"
+      sha256 "f320a6d00de727bbafc391a7087a70cfea61a92c0f8a393b15f50fc07b45f3a2"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.5+871502f5a39b/homebrew/rayline-0.5.5-macosx_10_12_x86_64.tar.gz"
-      sha256 "ed56a075ce1e54a724ba09369489ec0747cfca905edaa76deafa89074570eda2"
+      url "https://get.rayline.ai/cli/v0.5.6+4bfa7c362b68/homebrew/rayline-0.5.6-macosx_10_12_x86_64.tar.gz"
+      sha256 "25ea9d570c00638931d983dc63fd670ff8510f91f5940715f5002740d6bb5dcc"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://get.rayline.ai/cli/v0.5.5+871502f5a39b/homebrew/rayline-0.5.5-linux_aarch64.tar.gz"
-      sha256 "2517ce7cc1cc392bda30791450727c3d7b8eb93a5a4f86e23b5dd8f2995c2f1b"
+      url "https://get.rayline.ai/cli/v0.5.6+4bfa7c362b68/homebrew/rayline-0.5.6-linux_aarch64.tar.gz"
+      sha256 "2d16245c30f923ba4d25185263ab8321a072cde248cbdc7bb9fec7156328dcd1"
     end
 
     on_intel do
-      url "https://get.rayline.ai/cli/v0.5.5+871502f5a39b/homebrew/rayline-0.5.5-linux_x86_64.tar.gz"
-      sha256 "0c99cbebe89a9806186c4ee26387b620069ad180dfa16670554144696958ec1e"
+      url "https://get.rayline.ai/cli/v0.5.6+4bfa7c362b68/homebrew/rayline-0.5.6-linux_x86_64.tar.gz"
+      sha256 "639b762d7b89ee653af504ccd2b67c5d21c78c3016adc53f1a5490d60a7bf1a2"
     end
   end
 
